@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="LUCE/Assets.xcassets/AppIcon.appiconset/AppIcon.png" alt="LUCE Logo" width="64" />
+  <img src="public/logo.jpg" alt="LUCE Logo" width="64" />
   <br />
   <h1 align="center">LUCE</h1>
   <p align="center">Keyboard Cleaning Mode for Mac</p>
@@ -16,6 +16,9 @@
 LUCE is a lightweight macOS menu bar utility that lets you safely clean your keyboard without triggering accidental key presses or system shortcuts. One click locks the keyboard entirely — and one click brings it back.
 
 ---
+
+> “In Italian, *LUCE* translates to ‘light’ or ‘illumination.’ Ferrari chose this name to symbolize a ‘new dawn’ for the company and their forward-looking multi-energy strategy, rather than purely referencing the car’s weight.”
+> — Ferrari, 2026
 
 ## Features
 
