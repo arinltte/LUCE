@@ -20,6 +20,8 @@ LUCE is a lightweight macOS menu bar utility that lets you safely clean your key
 > “In Italian, *LUCE* translates to ‘light’ or ‘illumination.’ Ferrari chose this name to symbolize a ‘new dawn’ for the company and their forward-looking multi-energy strategy, rather than purely referencing the car’s weight.”
 > — Ferrari, 2026
 
+<video src="https://github.com/user-attachments/assets/bb870a76-f6fe-4364-baa3-170740291919" controls width="800"></video>
+
 ## Features
 
 - **Keyboard Cleaning Mode** — Locks all keyboard input at the system level using a CGEvent tap, blocking key-down, key-up, modifier flags, and media keys (brightness, volume, play/pause).
