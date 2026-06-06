@@ -2,7 +2,7 @@
   <img src="public/logo.jpg" alt="LUCE Logo" width="64" />
   <br />
   <h1 align="center">LUCE</h1>
-  <p align="center">Keyboard Cleaning Mode for Mac</p>
+  <p align="center">Keyboard Cleaner for Your Mac.</p>
   <p align="center">
     <a href="https://github.com/arinltte/LUCE/releases/latest"><img src="https://img.shields.io/github/v/release/arinltte/LUCE?style=flat-square&color=blue" alt="Latest Release" /></a>
     <a href="https://github.com/arinltte/LUCE/blob/main/LICENSE"><img src="https://img.shields.io/github/license/arinltte/LUCE?style=flat-square&color=green" alt="License" /></a>
