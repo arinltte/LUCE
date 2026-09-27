@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="public/logo.jpg" alt="LUCE Logo" width="64" />
+  <img src="public/logo.png" alt="luce Logo" width="64" />
   <br />
-  <h1 align="center">LUCE</h1>
+  <h1 align="center">luce</h1>
   <p align="center">Keyboard Cleaner for Your Mac.</p>
   <p align="center">
     <a href="https://github.com/arinltte/LUCE/releases/latest"><img src="https://img.shields.io/github/v/release/arinltte/LUCE?style=flat-square&color=blue" alt="Latest Release" /></a>
@@ -13,7 +13,7 @@
 
 ---
 
-LUCE is a lightweight macOS menu bar utility that lets you safely clean your keyboard without triggering accidental key presses or system shortcuts. One click locks the keyboard entirely — and one click brings it back.
+luce is a lightweight macOS menu bar utility that lets you safely clean your keyboard without triggering accidental key presses or system shortcuts. One click locks the keyboard entirely — and one click brings it back.
 
 ---
 
@@ -25,7 +25,7 @@ LUCE is a lightweight macOS menu bar utility that lets you safely clean your key
 ## Features
 
 - **Keyboard Cleaning Mode** — Locks all keyboard input at the system level using a CGEvent tap, blocking key-down, key-up, modifier flags, and media keys (brightness, volume, play/pause).
-- **Brightness Safety Check** — Before locking, LUCE reads the current display brightness. If it is below 20%, a persistent warning is shown prompting you to raise it first — so you can always see the Unlock button while cleaning.
+- **Brightness Safety Check** — Before locking, luce reads the current display brightness. If it is below 20%, a persistent warning is shown prompting you to raise it first — so you can always see the Unlock button while cleaning.
 - **Floating Panel** — A compact, always-on-top panel that anchors to the top edge of your screen and stays accessible during keyboard lock. Dismisses with Escape when unlocked.
 - **Crash-Safe Unlock** — An `atexit` handler and `deinit` path both call `emergencyUnlock`, ensuring the keyboard is always restored even on unexpected termination.
 - **Theme Customisation** — Choose from four ambient background themes: Default, Rare Jade, Deep Ocean, and Floral.
@@ -39,7 +39,7 @@ LUCE is a lightweight macOS menu bar utility that lets you safely clean your key
 
 - macOS 14 (Sonoma) or later
 - Xcode 15 or later (to build from source)
-- **Accessibility permission** — required for the CGEvent tap that blocks keyboard input. LUCE will prompt for this automatically.
+- **Accessibility permission** — required for the CGEvent tap that blocks keyboard input. luce will prompt for this automatically.
 
 ---
 
@@ -47,23 +47,23 @@ LUCE is a lightweight macOS menu bar utility that lets you safely clean your key
 
 ### Recommended
 
-Download the latest `.dmg` from the [Releases](https://github.com/arinltte/LUCE/releases/latest) page, open it, and drag **LUCE** to your Applications folder.
+Download the latest `.dmg` from the [Releases](https://github.com/arinltte/LUCE/releases/latest) page, open it, and drag **luce** to your Applications folder.
 
 ### Gatekeeper
 
 If macOS blocks the app on first launch, run the following in Terminal after installation:
 
 ```bash
-xattr -rd com.apple.quarantine /Applications/LUCE.app
+xattr -rd com.apple.quarantine /Applications/luce.app
 ```
 
-Then open **System Settings → Privacy & Security → Accessibility** and enable LUCE.
+Then open **System Settings → Privacy & Security → Accessibility** and enable luce.
 
 ---
 
 ## Usage
 
-1. Click the LUCE icon in your menu bar.
+1. Click the luce icon in your menu bar.
 2. Click **Lock Keyboard** — the panel switches to Locked state and all keyboard input is blocked.
 3. Clean your keyboard.
 4. Click **Unlock** (mouse or trackpad only) to restore normal input.
@@ -74,7 +74,7 @@ The panel can be dismissed at any time by pressing Escape (when unlocked) or by 
 
 ## Brightness Warning
 
-LUCE checks your screen brightness when you attempt to lock. If it is below 20%, locking is blocked and a warning is displayed:
+luce checks your screen brightness when you attempt to lock. If it is below 20%, locking is blocked and a warning is displayed:
 
 > Screen brightness is at X%. Increase to at least 20% before locking so you can see the Unlock button.
 
@@ -117,9 +117,9 @@ LUCE/
 ├── Assets.xcassets/       # App icon and asset catalog
 ├── FloatingPanel.swift    # NSPanel subclass — floating, borderless, top-edge-anchored
 ├── LUCEApp.swift          # App entry point, AppDelegate, status bar setup
-├── LUCEClient.swift       # Core logic — keyboard lock, brightness, permissions
-├── LUCETheme.swift        # Theme definitions and ambient background view
-└── LUCEView.swift         # SwiftUI views — main, locked, about panels
+├── LuceClient.swift       # Core logic — keyboard lock, brightness, permissions
+├── LuceTheme.swift        # Theme definitions and ambient background view
+└── LuceView.swift         # SwiftUI views — main, locked, about panels
 ```
 
 ---
@@ -138,27 +138,31 @@ Build and run the `LUCE` scheme in Xcode. No dependency resolution required — 
 
 ## Privacy
 
-LUCE does not collect, transmit, or log any data.
+luce does not collect, transmit, or log any data.
 
 | Location | Contents |
 |---|---|
-| `~/Library/Preferences/com.arinltte.LUCE.plist` | Theme and menu bar icon preference |
+| `~/Library/Preferences/arinltte.LUCE.plist` | Theme and menu bar icon preference |
 
 To uninstall completely:
 
 ```bash
-rm -rf /Applications/LUCE.app
-rm -f ~/Library/Preferences/com.arinltte.LUCE.plist
-rm -rf ~/Library/Application\ Support/com.arinltte.LUCE 2>/dev/null
-rm -rf ~/Library/Saved\ Application\ State/com.arinltte.LUCE.savedState 2>/dev/null
+rm -rf /Applications/luce.app
+rm -f ~/Library/Preferences/arinltte.LUCE.plist
+rm -rf ~/Library/Application\ Support/arinltte.LUCE 2>/dev/null
+rm -rf ~/Library/Saved\ Application\ State/arinltte.LUCE.savedState 2>/dev/null
 ```
 
 ---
 
-## License
+## 📜 License
 
-Distributed under the MIT License. See `LICENSE` for details.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="center">
-  <i>Developed by arinltte · cjshen00@gmail.com</i>
+  <i>Logo by GUMO · https://www.instagram.com/gumoooo._/</i>
+</p>
+
+<p align="center">
+  <i>Developed by arinltte · arinltte00@gmail.com</i>
 </p>

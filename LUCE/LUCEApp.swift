@@ -49,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         if let button = statusItem?.button {
             let iconName = UserDefaults.standard.string(forKey: "menuBarIcon") ?? "keyboard"
-            button.image = NSImage(systemSymbolName: iconName, accessibilityDescription: "LUCE")
+            button.image = NSImage(systemSymbolName: iconName, accessibilityDescription: "luce")
             button.action = #selector(statusBarClicked)
         }
     }
@@ -87,7 +87,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         ) { [weak self] notification in
             if let icon = notification.userInfo?["icon"] as? String {
                 self?.statusItem?.button?.image = NSImage(
-                    systemSymbolName: icon, accessibilityDescription: "LUCE"
+                    systemSymbolName: icon, accessibilityDescription: "luce"
                 )
             }
         }
@@ -99,12 +99,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             if isLocked {
                 self?.statusItem?.button?.image = NSImage(
                     systemSymbolName: "lock.fill",
-                    accessibilityDescription: "LUCE – Locked"
+                    accessibilityDescription: "luce – Locked"
                 )
             } else {
                 let iconName = UserDefaults.standard.string(forKey: "menuBarIcon") ?? "keyboard"
                 self?.statusItem?.button?.image = NSImage(
-                    systemSymbolName: iconName, accessibilityDescription: "LUCE"
+                    systemSymbolName: iconName, accessibilityDescription: "luce"
                 )
             }
         }

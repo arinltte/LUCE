@@ -88,7 +88,7 @@ struct LuceView: View {
         VStack(alignment: .leading, spacing: 16) {
             // Header
             HStack {
-                Text("LUCE")
+                Text("luce")
                     .font(.system(size: 16, weight: .bold))
                     .foregroundColor(.primary)
                 Spacer()
@@ -225,7 +225,7 @@ struct LuceView: View {
                         .frame(width: 52, height: 52)
                         .cornerRadius(12)
                 }
-                Text(Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "LUCE")
+                Text(Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "luce")
                     .font(.system(size: 13, weight: .bold))
                 Text("Version \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0")")
                     .font(.system(size: 10))
@@ -255,7 +255,6 @@ struct LuceView: View {
                     Text("⌨️ Keyboard").tag("keyboard")
                     Text("🔒 Lock").tag("lock.fill")
                     Text("🛡️ Shield").tag("lock.shield")
-                    Text("🧹 Broom").tag("broom")
                     Text("✨ Sparkles").tag("sparkles")
                     Text("💧 Drop").tag("drop.fill")
                     Text("🔌 Plug").tag("powerplug")
@@ -281,13 +280,10 @@ struct LuceView: View {
             Spacer(minLength: 0)
 
             VStack(spacing: 1) {
-                Text("2026 Developed by [arinltte](https://github.com/arinltte)")
+                Text("Developed by [arinltte](https://github.com/arinltte) · arinltte00@gmail.com")
                     .font(.system(size: 10))
                     .foregroundColor(.secondary)
                     .tint(client.appTheme.accentColor)
-                Text("cjshen00@gmail.com")
-                    .font(.system(size: 10))
-                    .foregroundColor(.secondary)
             }
             .multilineTextAlignment(.center)
         }
