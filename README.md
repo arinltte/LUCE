@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="LUCE/Assets.xcassets/AppIcon.appiconset/AppIcon.png" alt="LUCE Logo" width="64" />
+  <img src="public/logo.jpg" alt="LUCE Logo" width="64" />
   <br />
   <h1 align="center">LUCE</h1>
-  <p align="center">Keyboard Cleaning Mode for Mac</p>
+  <p align="center">Keyboard Cleaner for Your Mac.</p>
   <p align="center">
-    <a href="https://github.com/arinltte/luce/releases/latest"><img src="https://img.shields.io/github/v/release/arinltte/luce?style=flat-square&color=blue" alt="Latest Release" /></a>
-    <a href="https://github.com/arinltte/luce/blob/main/LICENSE"><img src="https://img.shields.io/github/license/arinltte/luce?style=flat-square&color=green" alt="License" /></a>
+    <a href="https://github.com/arinltte/LUCE/releases/latest"><img src="https://img.shields.io/github/v/release/arinltte/LUCE?style=flat-square&color=blue" alt="Latest Release" /></a>
+    <a href="https://github.com/arinltte/LUCE/blob/main/LICENSE"><img src="https://img.shields.io/github/license/arinltte/LUCE?style=flat-square&color=green" alt="License" /></a>
     <img src="https://img.shields.io/badge/platform-macOS%2014%2B-lightgrey?style=flat-square" alt="macOS" />
     <img src="https://img.shields.io/badge/swift-5.9%2B-orange?style=flat-square" alt="Swift" />
   </p>
@@ -16,6 +16,11 @@
 LUCE is a lightweight macOS menu bar utility that lets you safely clean your keyboard without triggering accidental key presses or system shortcuts. One click locks the keyboard entirely — and one click brings it back.
 
 ---
+
+> “In Italian, *LUCE* translates to ‘light’ or ‘illumination.’ Ferrari chose this name to symbolize a ‘new dawn’ for the company and their forward-looking multi-energy strategy, rather than purely referencing the car’s weight.”
+> — Ferrari, 2026
+
+<video src="https://github.com/user-attachments/assets/bb870a76-f6fe-4364-baa3-170740291919" controls width="800"></video>
 
 ## Features
 
@@ -42,7 +47,7 @@ LUCE is a lightweight macOS menu bar utility that lets you safely clean your key
 
 ### Recommended
 
-Download the latest `.dmg` from the [Releases](https://github.com/arinltte/luce/releases/latest) page, open it, and drag **LUCE** to your Applications folder.
+Download the latest `.dmg` from the [Releases](https://github.com/arinltte/LUCE/releases/latest) page, open it, and drag **LUCE** to your Applications folder.
 
 ### Gatekeeper
 
@@ -112,9 +117,9 @@ LUCE/
 ├── Assets.xcassets/       # App icon and asset catalog
 ├── FloatingPanel.swift    # NSPanel subclass — floating, borderless, top-edge-anchored
 ├── LUCEApp.swift          # App entry point, AppDelegate, status bar setup
-├── LuceClient.swift       # Core logic — keyboard lock, brightness, permissions
-├── LuceTheme.swift        # Theme definitions and ambient background view
-└── LuceView.swift         # SwiftUI views — main, locked, about panels
+├── LUCEClient.swift       # Core logic — keyboard lock, brightness, permissions
+├── LUCETheme.swift        # Theme definitions and ambient background view
+└── LUCEView.swift         # SwiftUI views — main, locked, about panels
 ```
 
 ---
@@ -122,8 +127,8 @@ LUCE/
 ## Building from Source
 
 ```bash
-git clone https://github.com/arinltte/luce.git
-cd luce
+git clone https://github.com/arinltte/LUCE.git
+cd LUCE
 open LUCE.xcodeproj
 ```
 
@@ -137,15 +142,15 @@ LUCE does not collect, transmit, or log any data.
 
 | Location | Contents |
 |---|---|
-| `~/Library/Preferences/com.arinltte.luce.plist` | Theme and menu bar icon preference |
+| `~/Library/Preferences/com.arinltte.LUCE.plist` | Theme and menu bar icon preference |
 
 To uninstall completely:
 
 ```bash
 rm -rf /Applications/LUCE.app
-rm -f ~/Library/Preferences/com.arinltte.luce.plist
-rm -rf ~/Library/Application\ Support/com.arinltte.luce 2>/dev/null
-rm -rf ~/Library/Saved\ Application\ State/com.arinltte.luce.savedState 2>/dev/null
+rm -f ~/Library/Preferences/com.arinltte.LUCE.plist
+rm -rf ~/Library/Application\ Support/com.arinltte.LUCE 2>/dev/null
+rm -rf ~/Library/Saved\ Application\ State/com.arinltte.LUCE.savedState 2>/dev/null
 ```
 
 ---
